@@ -1,0 +1,163 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #0056b3;
+}
+
+.generator-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+button:disabled {
+  background: #6c757d;
+}
+
+.output-container {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.image-result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image-result img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+pre {
+  text-align: left;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+.model-selector {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.model-selector select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: white;
+  font-size: 14px;
+}
+
+.model-selector label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+optgroup {
+  font-style: normal;
+  font-weight: bold;
+  color: #333;
+}
+
+optgroup option {
+  font-weight: normal;
+  padding: 5px;
+}
+
+/* Error Messages */
+.error-message {
+  color: #dc3545;
+  background: #f8d7da;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+/* Placeholders */
+.placeholder {
+  color: #6c757d;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Image Loading State */
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Image Actions */
+.image-actions {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Code Output */
+.code-output {
+  background: #282c34;
+  border-radius: 4px;
+  max-height: 500px;
+  overflow-y: auto;
+}
